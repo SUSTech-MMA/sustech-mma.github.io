@@ -1,23 +1,18 @@
 # Basic
-title: 南科文学社
-subtitle: 社团站
-description: 皓首穷经，绣口锦心真俊杰。青云有志，经天行地大文章。
+title: 南方科技大学数学建模协会
+subtitle: 协会
+description: 数学建模。
 # 头像里面的标题
-avatarTitle: SUSTC Literature
+avatarTitle: SUSTech MMA
 # 头像里面的描述
-avatarDesc: 文学
-url: "http://iydon.github.io"
-
-# Comment
-comment:
-    disqus: leopard
-    # uyan: 2143225  # 有言id,登录有言官网申请
+avatarDesc: 建模
+url: "http://sustech-mma.github.io"
 
 # Social
 social:
-    github: Iydon
+    github: SUSTech-mma
     # twitter: 
-    mail: 11711217@mail.sustc.edu.com
+    mail: mma@sustc.edu.com
 
 
 
