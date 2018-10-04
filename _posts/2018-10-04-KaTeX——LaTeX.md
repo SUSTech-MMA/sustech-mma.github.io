@@ -1,165 +1,37 @@
 ---
 layout: post
-title: "KaTeX——LaTeX"
+title: "MathJax & KaTeX——LaTeX"
 date: 2018-10-04
 description: ""
 tag: LaTeX
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.css" integrity="sha384-JwmmMju6Z7M9jiY4RXeJLoNb3aown2QCC/cI7JPgmOLsn3n33pdwAj0Ml/CMMd1W" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.js" integrity="sha384-atIluo+2Hixq8HCazSQWa1JjeC5L0CQeWAx74Q+EbqgAW4UixbrBQF4+1jvBX01b" crossorigin="anonymous"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
-[TOC]
-
-#### Setting
-
-    {
-        tex  : true
-    }
-
-#### Custom KaTeX source URL
-
-```javascript
-// Default using CloudFlare KaTeX's CDN
-// You can custom url
-editormd.katexURL = {
-    js  : "your url",  // default: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min
-    css : "your url"   // default: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min
-};
+## MathJax
+&emsp;&emsp;在需要使用数学公式的**Markdown**文件中添加如下内容，即可使用**CDN**（Content Delivery Network）产生数学公式。注意数学公式需要使用**$$**包围。  
+```
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 ```
 
-#### Examples
-
-##### 行内的公式 Inline
- 
-$$E=mc^2$$
-
-Inline 行内的公式 $$E=mc^2$$ 行内的公式，行内的$$E=mc^2$$公式。
-
-$$c = \\pm\\sqrt{a^2 + b^2}$$
-
-$$x > y$$
-
-$$f(x) = x^2$$
-
-$$\alpha = \sqrt{1-e^2}$$
-
-$$\(\sqrt{3x-1}+(1+x)^2\)$$
-             
-$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
-
-$$\\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$
-
-$$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
-
-$$\displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }$$
-
-$$\displaystyle \left( \sum\_{k=1}^n a\_k b\_k \right)^2 \leq \left( \sum\_{k=1}^n a\_k^2 \right) \left( \sum\_{k=1}^n b\_k^2 \right)$$
-
-$$a^2$$
-
-$$a^{2+2}$$
-
-$$a_2$$
-
-$${x_2}^3$$
-
-$$x_2^3$$
-
-$$10^{10^{8}}$$
-
-$$a_{i,j}$$
-
-$$_nP_k$$
-
-$$c = \pm\sqrt{a^2 + b^2}$$
-
-$$\frac{1}{2}=0.5$$
-
-$$\dfrac{k}{k-1} = 0.5$$
-
-$$\dbinom{n}{k} \binom{n}{k}$$
-
-$$\oint_C x^3\, dx + 4y^2\, dy$$
-
-$$\bigcap_1^n p   \bigcup_1^k p$$
-
-$$e^{i \pi} + 1 = 0$$
-
-$$\left ( \frac{1}{2} \right )$$
-
-$$x_{1,2}=\frac{-b\pm\sqrt{\color{Red}b^2-4ac}}{2a}$$
-
-$${\color{Blue}x^2}+{\color{YellowOrange}2x}-{\color{OliveGreen}1}$$
-
-$$\textstyle \sum_{k=1}^N k^2$$
-
-$$\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n$$
-
-$$\binom{n}{k}$$
-
-$$0+1+2+3+4+5+6+7+8+9+10+11+12+13+14+15+16+17+18+19+20+\cdots$$
-
-$$\sum_{k=1}^N k^2$$
-
-$$\textstyle \sum_{k=1}^N k^2$$
-
-$$\prod_{i=1}^N x_i$$
-
-$$\textstyle \prod_{i=1}^N x_i$$
-
-$$\coprod_{i=1}^N x_i$$
-
-$$\textstyle \coprod_{i=1}^N x_i$$
-
-$$\int_{1}^{3}\frac{e^3/x}{x^2}\, dx$$
-
-$$\int_C x^3\, dx + 4y^2\, dy$$
-
-$${}_1^2\!\Omega_3^4$$
-
-##### 多行公式 Multi line
-
-> \`\`\`math or \`\`\`latex or \`\`\`katex
-
-```math
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
+例如
+```LaTeX
+$$
+f(x) = \int_{-\infty}^\infty\hat f\xi\,e^{2 \pi i \xi x}\,d\xi
+$$
 ```
+&emsp;&emsp;即可渲染出如下公式：
 
-```math
-\displaystyle
-\left( \sum\_{k=1}^n a\_k b\_k \right)^2
-\leq
-\left( \sum\_{k=1}^n a\_k^2 \right)
-\left( \sum\_{k=1}^n b\_k^2 \right)
-```
+$$
+f(x) = \int_{-\infty}^\infty\hat f\xi\,e^{2 \pi i \xi x}\,d\xi
+$$
 
-```math
-\dfrac{ 
-    \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }
-    { 1-\tfrac{1}{2} } = s_n
-```
+&emsp;&emsp;由于**MathJax**需要兼容东西太多，所以转化大规模数学公式性能较差，于是就有**KaTeX**  
 
-```katex
-\displaystyle 
-    \frac{1}{
-        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
-        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
-        1+\frac{e^{-6\pi}}
-        {1+\frac{e^{-8\pi}}
-         {1+\cdots} }
-        } 
-    }
-```
+## KaTeX
 
-```latex
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-```
+&emsp;&emsp;据说优点有快速、并发渲染、无需重排页面，但是个人没有配置出来，所以无法对其进行评价。以下为搜索到的资源，等待以后更进一步的探索。
 
-#### KaTeX vs MathJax
-
-[https://jsperf.com/katex-vs-mathjax](https://jsperf.com/katex-vs-mathjax "KaTeX vs MathJax")
+> [Jekyll 中使用 KaTeX](https://frankindev.com/2017/02/08/using-katex-in-jekyll/ "frankindev.com")  
+> [KaTeX官网](https://katex.org/ "katex.org")  
+> [Github](https://github.com/Khan/KaTeX "github.com")
