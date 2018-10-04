@@ -43,6 +43,5 @@ paginate_path: "page/:num/"
 
 # Personal
 markdown: kramdown
-
 kramdown:
   input: GFM
