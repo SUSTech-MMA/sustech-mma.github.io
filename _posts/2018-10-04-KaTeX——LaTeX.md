@@ -17,13 +17,13 @@ tag: LaTeX
 例如
 ```LaTeX
 $$
-f(x) = \int_{-\infty}^\infty\hat f\xi\,e^{2 \pi i \xi x}\,d\xi
+f(x) = \int_{-\infty}^\infty\hat f(\xi\,e^{2 \pi i \xi x})\,d\xi
 $$
 ```
 &emsp;&emsp;即可渲染出如下公式：
 
 $$
-f(x) = \int_{-\infty}^\infty\hat f\xi\,e^{2 \pi i \xi x}\,d\xi
+f(x) = \int_{-\infty}^\infty\hat f(\xi\,e^{2 \pi i \xi x})\,d\xi
 $$
 
 &emsp;&emsp;由于**MathJax**需要兼容东西太多，所以转化大规模数学公式性能较差，于是就有**KaTeX**  
