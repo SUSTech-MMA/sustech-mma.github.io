@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MathJax和KaTeX——LaTeX.md"
+title: "MathJax和KaTeX——LaTeX"
 date: 2018-10-04
 description: ""
 tag: LaTeX
