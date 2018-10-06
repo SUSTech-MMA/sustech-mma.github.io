@@ -30,23 +30,23 @@ Find the maximal positive integer $$l$$ such the $$x_l$$ is integer.
 from fractions import Fraction
 
 def contest(num:int=0):
-	if num<2:
-		return Fraction(num, 1)
-	x0 = Fraction(0, 1)
-	x1 = Fraction(1, 1)
-	for i in range(num):
-		tmp = x1
-		x1 += x0/2
-		x0 = tmp
-	return x1
+    if num<2:
+        return Fraction(num, 1)
+    x0 = Fraction(0, 1)
+    x1 = Fraction(1, 1)
+    for i in range(num):
+        tmp = x1
+        x1 += x0/2
+        x0 = tmp
+    return x1
 
 num = 0
 try:
-	while True:
-		ans = contest(num)
-		if ans._denominator==1:
-			print(num)
-		num += 1
+    while True:
+        ans = contest(num)
+        if ans._denominator==1:
+            print(num)
+        num += 1
 except:
-	print(num)
+    print(num)
 ```
