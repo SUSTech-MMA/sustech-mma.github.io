@@ -65,7 +65,7 @@ $$Math\Longleftrightarrow\text{Real Life}$$
 5. 充足的准备工作：节约时间用以解决问题。  
 
 * * *
-# 换届仪式
+# [换届仪式](/files/Overview_2018.pdf)
 南方科技大学数学建模协会第五届会长——Iydon。  
 
 ![](/images/posts/2018-10-07-xuan-jiang-1.jpg)
