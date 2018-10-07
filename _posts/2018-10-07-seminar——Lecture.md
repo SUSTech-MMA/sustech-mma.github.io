@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "数学建模宣讲会——讲座"
-date: 2018-10-05
+date: 2018-10-07
 description: ""
 tag: 讲座
 ---
