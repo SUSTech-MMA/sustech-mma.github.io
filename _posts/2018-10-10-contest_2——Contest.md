@@ -24,6 +24,6 @@ $$
 M\,=\,\left\{a>0\,|\,\sum_{n=1}^{\infty}\frac{a^{f(x)}}{n^2}\,converge\right\}
 $$
 
-- - -
+* * *
 
 ![](/images/posts/2018-10-10-zhi-shi-jing-sai-1.png)
