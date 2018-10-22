@@ -129,7 +129,7 @@ disp("Elapsed time is %.6f seconds."%toc())
 
 # 混合编程
 
-&emsp;&emsp;后来再[CSDN博客](https://blog.csdn.net/baidu_32134295/article/details/52926284)上面查找到他们混合编程的实现。  
+&emsp;&emsp;后来再[CSDN博客](https://blog.csdn.net/baidu_32134295/article/details/52926284)上面查找到混合编程的实现。  
 
 &emsp;&emsp;在按照如博客所述安装成功后，只实验*Python*环境，并未实验*Java*。
 ```Python
