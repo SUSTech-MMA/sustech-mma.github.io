@@ -15,6 +15,7 @@ tag: LaTeX
 # 依赖安装
 ## Docker-ce and Docker-compose
 ~~参见[Docker-ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/)与[Docker-compose](https://docs.docker.com/compose/install/)。~~
+
 无需使用*apt*安装，运行*sharelatex*自带的```.yml```文件即可自动配置。
 
 ## Redis and Mongodb
@@ -58,7 +59,7 @@ CONTAINER ID        IMAGE                   COMMAND                  CREATED    
 79eb20131893        redis                   "docker-entrypoint.s…"   17 hours ago        Up 15 hours         6379/tcp               redis
 ```
 *sharelatex*的container ID是*056c250ddb2a*，再执行
-```Shell
+```
 $ docker inspect -f {{.State.Pid}} 056c250ddb2a
 14510
 ```
