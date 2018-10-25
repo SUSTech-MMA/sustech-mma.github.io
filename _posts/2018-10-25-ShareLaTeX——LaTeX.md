@@ -14,7 +14,8 @@ tag: LaTeX
 
 # 依赖安装
 ## Docker-ce and Docker-compose
-参见[Docker-ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/)与[Docker-compose](https://docs.docker.com/compose/install/)。
+~~参见[Docker-ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/)与[Docker-compose](https://docs.docker.com/compose/install/)。~~
+无需使用*apt*安装，运行*sharelatex*自带的```.yml```文件即可自动配置。
 
 ## Redis and Mongodb
 ```Shell
