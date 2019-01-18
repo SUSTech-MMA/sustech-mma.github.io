@@ -6,7 +6,7 @@ description: ""
 tag: MATLAB
 ---
 
-```MATLAB
+```matlab
 基本操作
 	format格式
 	;禁止输出
