@@ -137,6 +137,6 @@ import matlab.engine
 
 eng   = matlab.engine.start_matlab()
 Mat   = eng.rand(1024)
-U,S,V = eng.svd(m, nargout=3)
+U,S,V = eng.svd(Mat, nargout=3)
 ```
 得到的结果较在*MATLAB*中使用并无差异，而且精度也较*Python*好。
